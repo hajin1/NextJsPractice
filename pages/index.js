@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Alert from '../components/Alert';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 
@@ -15,6 +16,12 @@ export default function Home() {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>)
         </p>
       </section>
+      <Alert type={'success'}>
+        <div>Success!</div>
+      </Alert>
+      <Alert type={'error'}>
+        <div>Error!</div>
+      </Alert>
     </Layout>
   );
 }
